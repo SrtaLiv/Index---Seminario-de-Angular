@@ -1,0 +1,53 @@
+article{
+    padding: 50px;
+    background-color: white;  
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+img{
+    object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.scroll-barrita{
+    background-color: rgb(75, 75, 225);
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 15px;
+    animation: scroll-barrita linear;
+    transform-origin: left;
+    animation-timeline: scroll();
+    scale: 0 1;
+}
+
+@keyframes scroll-barrita{
+    to {scale: 1 1;}
+}
+
+/* SEGUNDO SCROLL CON SOMBRA */
+article > img{
+    animation: scroll-sombra linear forwards;
+    animation-timeline: view();
+    /* animation-timeline: view(200px); */
+    /* animation-range-start: cover;*/
+    /* animation-range-end: cover;  */
+    /* animation-range: cover; */
+}
+
+@keyframes scroll-sombra{
+    from {scale: .8; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+}

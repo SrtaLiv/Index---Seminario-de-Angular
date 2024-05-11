@@ -27,3 +27,8 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, index');
   });
 });
+
+//SEGUNDO COMPONENTE
+describe('Card', ()=>{
+  
+})
