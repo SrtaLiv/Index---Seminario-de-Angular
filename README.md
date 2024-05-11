@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Index
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Index---Seminario-de-Angular
+Aprendiendo Angular con proyecto "Index"
+>>>>>>> 4d4b27cd35292dd4f70cde8dd895574e8c6f2620
