@@ -28,7 +28,3 @@ describe('AppComponent', () => {
   });
 });
 
-//SEGUNDO COMPONENTE
-describe('Card', ()=>{
-  
-})

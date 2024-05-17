@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.scss'
 })
 export class ProductListComponent {
-
+  title = "hellooo!";
 }

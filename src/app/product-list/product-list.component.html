@@ -1,1 +1,18 @@
-<p>product-list works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Calorias</th>
+            <th>Proteina</th>
+            <th>Alimentos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <ng-container *ngif=""product && products.length > 0; else empty</ng-container>
+        <tr *ngfor="let product of products;">
+            <td>{{product.tipo}}</td>
+            @if 
+        </tr>
+    </tbody>
+</table>
