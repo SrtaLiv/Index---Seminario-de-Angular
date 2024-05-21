@@ -3,16 +3,11 @@
 </style>
 
 <main class="main">
-  <div>
-    <nav>
-      <ul>
-        <li><a routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a>
-        </li>
-      </ul>
-    </nav>
-    <div style="margin-top: 24px">Current build: 17.3.6</div>
-
+  <div>    
+    <app-navbar></app-navbar>
     <mat-slide-toggle>Click!</mat-slide-toggle>
+    <app-product-list></app-product-list>
+    <button-components></button-components>
     <router-outlet></router-outlet>
 
   </div>

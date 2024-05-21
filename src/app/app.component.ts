@@ -3,6 +3,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CommonModule } from '@angular/common';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ButtonComponents } from './example/button.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ import { CommonModule } from '@angular/common';
     RouterOutlet,
     CommonModule,
     NavbarComponent,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    ProductListComponent,
+    ButtonComponents
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

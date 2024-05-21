@@ -7,15 +7,10 @@ import {MatButtonModule} from '@angular/material/button';
  * @title Button varieties
  */
 @Component({
-  selector: 'button-types-example',
-  templateUrl: 'button-types-example.html',
-  styleUrl: 'button-types-example.css',
+  selector: 'button-components',
+  templateUrl: 'button.components.html',
+  styleUrl: 'button.components.css',
   standalone: true,
   imports: [MatButtonModule, MatTooltipModule, MatIconModule],
 })
-export class ButtonTypesExample {}
-
-
-/**  Copyright 2024 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license */
+export class ButtonComponents {}

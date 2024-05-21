@@ -1,18 +1,25 @@
-<table>
-    <thead>
-        <tr>
-            <th>Tipo</th>
-            <th>Calorias</th>
-            <th>Proteina</th>
-            <th>Alimentos</th>
-        </tr>
-    </thead>
+<h3>Componente productos</h3>
+<!-- <ul>
+    <li *ngFor="let product of products">
+      {{ product.name }} - {{ product.price | currency }}
+    </li>
+</ul> -->
 
-    <tbody>
-        <ng-container *ngif=""product && products.length > 0; else empty</ng-container>
-        <tr *ngfor="let product of products;">
-            <td>{{product.tipo}}</td>
-            @if 
-        </tr>
-    </tbody>
-</table>
+@for (product of products; track product.name) {
+    <tr>
+      <td>{{ product.name }}</td>
+      <td>
+        <img src="{{product.img}}" alt="">
+      </td>
+      <td>$ {{ product.price }} </td>
+      @if (product.stock >0) {
+        <td> - CANT: {{ product.stock }}</td>
+      } @else {
+        <td>SIN STOCK</td>
+      }
+    </tr>
+  } @empty {
+    <tr>
+      <td colspan="4">No hay productos para mostrar.</td>
+    </tr>
+  }
