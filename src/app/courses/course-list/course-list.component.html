@@ -1,0 +1,20 @@
+<p>Productos works!</p>
+
+<div class="product-list">
+    @for (curso of cursos; track cursos.name) {
+        <img src={cursos.img} alt="">
+
+    <!-- @if (product.stock > 0) {
+    } @else {
+    <p>SIN STOCK</p>
+    } -->
+    } @empty {
+    <p>No hay cursos para mostrar</p>
+    }
+  
+    <!-- @for (product of products; track product.name) {
+    <li>{{ product.name }}</li>
+    } @empty {
+    <li>There are no items.</li>
+    } -->
+  </div>
