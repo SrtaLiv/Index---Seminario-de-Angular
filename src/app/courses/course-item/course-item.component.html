@@ -1,1 +1,17 @@
-<p>course-item works!</p>
+<div class="course-properties">
+    @for (course of courses; track course) { 
+        <!-- <img [src]="course.img" [alt]="course.name">  -->
+        <div>{{course.name}}</div>
+        <button {click}="upQuantity{course}">+</button>
+        
+    @if (course.availableUnits > 0) {
+        <p>CON STOCK</p>
+    } 
+    @else {
+    <p>SIN STOCK</p>
+    }
+}
+     @empty {
+    <p>No hay cursos para mostrar</p>
+    }
+  </div>
